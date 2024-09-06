@@ -1,0 +1,2223 @@
+# Flutter
+
+	Android Studio IDE
+
+		CTRL + O
+
+			Opções de methods, @override, dispopse, initState, etc...
+
+		CTRL + J
+
+			Selecão de múltiplas sentenças, para substituir todas as paçavras por outra, por exemplo
+
+	Visual Studio Code IDE
+
+		CTRL + BARRA_ESPAÇO
+
+			Opções de methods, @override, dispose, initState, etc...
+
+				override
+					
+					@ + CTRL + BARRA_ESPAÇO + over
+
+						@override
+						bool operator ==(Object other) {
+							return super == other;
+						}
+
+				initState
+
+					CTRL + BARRA_ESPAÇO + init
+
+						@override
+						void initState() {
+							// TODO: implement initState
+							super.initState();
+						}
+
+				dispose
+
+					CTRL + BARRA_ESPAÇO + disp
+
+						@override
+						void dispose() {
+							// TODO: implement dispose
+							super.dispose();
+						}
+
+		CTRL + PONTO_FINAL
+
+			Opções de Wrap, menu de Wrap		
+
+		CTRL + D
+
+			Selecão de múltiplas sentenças, para substituir todas as paçavras por outra, por exemplo
+
+		CTRL + SHIFT + *
+
+			Pula para o final do escopo do código, ou seja, estando no início de uma chave "{", será redirecionado para o dinal da chave "}" do mesmo escopo
+
+		CTRL + SHIFT + '
+
+			Cria um novo terminal dentro da raiz de algum projeto
+
+		CTRL + SHIFT + 1
+
+			Exibe, oculta e ou redireciona para dentro do terminal do projeto atual
+
+	# Endereços importantes
+
+		# Gerador de dados fake
+
+			https://www.4devs.com.br/gerador_de_cpf
+
+		# Convert image to Base64
+
+			https://base64.guru/converter/encode/file
+			https://base64.guru/converter
+
+			# Image My JP Logo 
+
+				"image": "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"
+		
+		# Image Resizer
+
+			https://imageresizer.com/
+
+		# SVG Converter
+
+			https://www.freeconvert.com/svg-converter
+
+	# Grant permitions
+
+		# directory all projects
+			$ sudo chmod -R 775 /home/hell/projects/
+			
+	# fvm - commands
+		  
+		# Instaled List
+		  	
+			$ fvm list
+
+		# Releases Available
+			
+			$ fvm releases
+
+		# Instal version
+			
+			$ fvm install 3.22.2
+		
+		# Set version global
+		
+			$ fvm global
+				# 3.22.2
+
+		# Use this "version" in your project
+
+		  	$ fvm use 3.??.? - Prof
+			$ fvm use 3.22.2 - Hell
+
+		# Instalar as dependências
+		  	
+			$ fvm flutter pub get
+
+		# Se precisar limpar o cache
+			
+			$ fvm flutter clean
+			$ fvm flutter pub get
+
+	# Create new App Flutter
+
+		$ fmvc
+				
+		$ fvm flutter create --project-name app_bloccubit_flutter --platforms android,ios,web,linux,windows,macos --org jpteam --description "Dominando o gerenciamento de estado, usando o bloc e cubit, como ferramentas de gerenciamento de todo os estados..." -e ./app_bloccubit_flutter
+							
+	# Renamed to
+
+		app-bloccubit-flutter
+
+# pubspec
+
+	# All this project dependencies
+
+		name: app_bloccubit_flutter
+		description: "Dominando o gerenciamento de estado, usando o bloc e cubit, como
+		ferramentas de gerenciamento de todo os estados..."
+		publish_to: "none"
+		version: 0.1.0
+
+		environment:
+		sdk: ">=3.4.3 <4.0.0"
+
+		dependencies:
+		flutter:
+			sdk: flutter
+		bloc: ^8.1.4
+		equatable: ^2.0.5
+		flutter_bloc: ^8.1.6
+		flutter_flavor: ^3.1.3
+
+		dev_dependencies:
+		flutter_test:
+			sdk: flutter
+		flutter_lints: ^3.0.0
+		bloc_test: ^9.1.7
+		mocktail: ^1.0.4
+		bloc_concurrency: ^0.2.5
+		replay_bloc: ^0.2.7
+		hydrated_bloc: ^9.1.5
+		path_provider: ^2.1.4
+
+		flutter:
+		uses-material-design: true
+
+
+# Flutter Flavor
+
+	# Tutorial oficial do Package "flutter_flavor"
+
+		https://pub.dev/packages/flutter_flavor
+
+			# Abrir o arquivo "pubspec.yaml" primeiro antes dfe rodar o comando "CTRL + SHIFT + P"
+
+				# Dentro do "pubspec.yaml"
+				
+					# Instalar via "Command Palet"
+					
+						CTRL + SHIFT + P
+
+						Pubspec Assist: Add/update dependencies
+
+							Digitar o nome do package
+
+								"flutter_flavor"
+
+									# Configuração do "flutter_flavor"
+
+										# Seguir tutorial oficial
+
+											https://pub.dev/packages/flutter_flavor
+
+
+
+
+
+# VSCODE
+
+	# LAUNCH.JSON
+
+		# Criar um arquivo chamado ".vscode/launch.json"
+
+			#################################### 01 FILE START####################################
+			{
+				"version": "0.2.0",
+				"configurations": [
+					{
+						"name": "Phisyc Device",
+						"request": "launch",
+						"type": "dart",
+						"program": "lib/main.dart",
+						"deviceId": "650a82a8"
+					},
+					{
+						"name": "Google Chrome",
+						"request": "launch",
+						"type": "dart",
+						"program": "lib/main.dart",
+						"deviceId": "chrome"
+					},
+					{
+						"name": "Emulator Prod",
+						"program": "lib/main.dart",
+						"request": "launch",
+						"type": "dart"
+					}
+				],
+				"compounds": [
+					{
+						"name": "All Devices",
+						"configurations": [
+							"Phisyc Device",
+							"Google Chrome",
+							"Emulator Prod"
+						]
+					}
+				]
+			}
+			#################################### 01 FILE END######################################
+
+
+
+			#################################### 02 FILE START####################################
+			{
+				"version": "0.2.0",
+				"configurations": [
+					{
+						"name": "Flutter Dev Run",
+						"request": "launch",
+						"type": "dart",
+						"program": "lib/main_dev.dart",
+						"args": [
+							"--flavor",
+							"dev",
+							"--target",
+							"lib/main_dev.dart",
+						]
+					},
+					{
+						"name": "Flutter Prod Run",
+						"request": "launch",
+						"type": "dart",
+						"program": "lib/main.dart",
+						"args": [
+							"--flavor",
+							"prod",
+							"--target",
+							"lib/main.dart",
+						]
+					},
+					{
+						"name": "Redmi Note 11 Dev Run",
+						"request": "launch",
+						"type": "dart",
+						"deviceId": "650a82a8",
+						"program": "lib/main_dev.dart",
+						"args": [
+							"--flavor",
+							"dev",
+							"--target",
+							"lib/main_dev.dart",
+						]
+					},
+					{
+						"name": "Redmi Note 11 Prod Run",
+						"request": "launch",
+						"type": "dart",
+						"deviceId": "650a82a8",
+						"program": "lib/main.dart",
+						"args": [
+							"--flavor",
+							"prod",
+							"--target",
+							"lib/main.dart",
+						]
+					},
+				]
+			}
+			#################################### 02 FILE END######################################
+
+# Alter App Package Name
+
+	# Change App Package Name with single command. It makes the process very easy and fast.
+
+		# Install package "change_app_package_name", in "pubspec.yaml" file
+
+			https://pub.dev/packages/change_app_package_name
+
+				change_app_package_name: ^1.1.0
+
+		# Na raiz do projeto, abrir um terminal e rodar o comando abaixo
+
+			$ fvm flutter pub run change_app_package_name:main com.new.package.name
+			
+			$ fvm flutter pub run change_app_package_name:main com.jpteam.app_scheduling_flutter
+
+			# Response
+
+				hell@note:~/projects/flutter/app-scheduling-flutter$ fvm flutter pub run change_app_package_name:main com.jpteam.app_scheduling_flutter
+				Old Package Name: dev.jpteam.app_scheduling_flutter
+				Updating build.gradle File
+				Updating Main Manifest file
+				Updating Debug Manifest file
+				Updating Profile Manifest file
+				Project is using kotlin
+				Updating MainActivity.kt
+				Creating New Directory Structure
+				Deleting old directories
+			
+
+		# Run app
+
+			# Deixar assim
+				
+				##############################FILE START OLD##############################
+				<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+					<application
+					android:label="@string/app_name"
+					android:name="${applicationName}"
+					android:icon="@mipmap/ic_launcher">
+					<activity
+						android:name=".MainActivity"
+						android:exported="true"
+						android:launchMode="singleTop"
+						android:theme="@style/LaunchTheme"
+						android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+						android:hardwareAccelerated="true"
+						android:windowSoftInputMode="adjustResize">
+						<!-- Specifies an Android theme to apply to this Activity as soon as
+							the Android process has started. This theme is visible to the user
+							while the Flutter UI initializes. After that, this theme continues
+							to determine the Window background behind the Flutter UI. -->
+						<meta-data
+							android:name="io.flutter.embedding.android.NormalTheme"
+							android:resource="@style/NormalTheme"
+							/>
+						<intent-filter>
+						<action android:name="android.intent.action.MAIN"/>
+						<category android:name="android.intent.category.LAUNCHER"/>
+						</intent-filter>
+					</activity>
+					<!-- Don't delete the meta-data below.
+							This is used by the Flutter tool to generate GeneratedPluginRegistrant.java -->
+					<meta-data
+						android:name="flutterEmbedding"
+						android:value="2" />
+					</application>
+				</manifest>
+				##############################FILE END OLD##############################
+
+# Dart Fix
+
+	# A mensagem de erro abaaixo aparece toda vez que inicio o VSCode com projeto Dart/Flutter
+
+		Your project contains issues the can be fixed by running "dart fix" from the command line
+
+			# Como corrigir isso, seqgue o tutorial
+
+				# Dart Official
+
+					https://dart.dev/tools/dart-fix
+
+				# Stackoverflow
+
+					https://stackoverflow.com/questions/77307967/your-project-contains-issues-that-can-be-fixed-by-running-dart-fix-from-the-co
+
+					# Solução proposta
+
+						# Você pode descobrir os motivos correndo para ver os problemas e as alterações propostas sem fazer as alterações.
+
+							$ dart fix --dry-run
+
+						# Se você estiver bem com as alterações propostas, corra para corrigir os problemas.
+						
+							$ dart fix --apply
+							
+
+# Flutter - APP
+
+	# connected devices
+	
+			$ fvm flutter devices
+			
+	#  Run - Para rodar o app no emulador ou smartphone
+	
+		# Run App
+
+			# Smartphone Device
+		
+				$ fvm flutter run
+				$ fvm flutter run -d 650a82a8
+				$ fvm flutter run -v -d 650a82a8
+
+			# Google Chrome
+		
+				$ fvm flutter run
+				$ fvm flutter run -d chrome
+				$ fvm flutter run -v -d chrome
+			
+	# Build - Compilar para mandar para as lojas, Google, Apple, etc...
+	
+		# Buil App Dev
+		
+			$ fvm flutter build apk --flavor dev -t lib/main_dev.dart
+						
+		# Build App Prod
+		
+			$ fvm flutter build apk --flavor prod -t lib/main.dart
+			
+		# Build App usando o Dart Define
+			
+			# Assistir aula 02 - aos 00:19:00
+			
+				$ fvm flutter build apk --dart-define BASE_URL="www.google.com.br" FLAVOR="dev"
+			
+				##############################FILE START##############################
+				import 'package:app_scheduling_flutter/app.dart';
+				import 'package:app_scheduling_flutter/core/flavor/flavor_config.dart';
+
+				void main() {
+					bootstrap(FlavorConfig(
+						baseUrl: String.fromEnvironment('BASE_URL'),
+						flavor: AppFlavor.dev,
+					));
+				}
+				##############################FILE END##############################
+				
+		# Android Studio Config
+		
+			--flavor dev ou --flavor prod
+			
+				# Pressionar no "topo" em "main.dart", proximo do botão de "Run" que é um "Player", antes do "debug"
+				# Pressionando em "main.dart" ou em "main_dev.dart"
+				# Aparecerá a opção "Edit Configurations..."
+				
+					Edit Configurations - DEV
+					
+						##############################FILE START##############################
+						name: DEV - DEBUG
+						Dart entrypoint: lib/main_dev.dart
+						Additional run args: empty
+						Additional attach args: empty
+						Build flavor: dev
+						##############################FILE END##############################
+			
+					Clonar a configuração acima e setar para PROD
+					
+						Edit Configurations - PROD
+						
+							##############################FILE START##############################
+							name: PROD - DEBUG
+							Dart entrypoint: lib/main.dart
+							Additional run args: empty
+							Additional attach args: empty
+							Build flavor: prod
+							##############################FILE END##############################
+							
+		# VSCode Config
+		
+			# Alterar o arquivo ".vscode/launch.json"								
+			
+				.vscode/launch.json
+				
+					##############################FILE START##############################
+					{
+						"version": "0.2.0",
+						"configurations": [
+							{
+								"name": "Flutter API 32 Run",
+								"request": "launch",
+								"type": "dart",
+								"deviceId": "emulator-5554",
+								"program": "lib/main.dart",
+								"console": "debugConsole"
+							},
+							{
+								"name": "Flutter Chrome Run",
+								"request": "launch",
+								"type": "dart",
+								"deviceId": "chrome",
+								"program": "lib/main.dart",
+								"console": "debugConsole"
+							},
+							{
+								"name": "Flutter Linux Run",
+								"request": "launch",
+								"type": "dart",
+								"deviceId": "linux",
+								"program": "lib/main.dart",
+								"console": "debugConsole"
+							},
+							{
+								"name": "Flutter Development Run ",
+								"request": "launch",
+								"type": "dart",
+								"program": "lib/main_dev.dart",
+								"args": [
+									"--flavor",
+									"dev"
+								]
+							},
+							{
+								"name": "Flutter Production Run",
+								"request": "launch",
+								"type": "dart",
+								"program": "lib/main.dart",
+								"args": [
+									"--flavor",
+									"prod"
+								]
+							},
+							{
+								"name": "Flutter Mobile Run",
+								"request": "launch",
+								"type": "dart",
+								"deviceId": "650a82a8",
+								"program": "lib/main.dart",
+								"console": "debugConsole"
+							},
+							{
+								"name": "Flutter Test Chrome Run",
+								"request": "launch",
+								"type": "dart",
+								"deviceId": "chrome",
+								"program": "./test/",
+								"console": "debugConsole"
+							},
+							{
+								"name": "Flutter Web Local Run",
+								"request": "launch",
+								"type": "dart",
+								"flutterMode": "debug",
+								"args": [
+									"-d",
+									"chrome",
+									"--web-renderer",
+									"html"
+								]
+							},
+							{
+								"name": "Flutter Web Production Run",
+								"request": "launch",
+								"type": "dart",
+								"flutterMode": "release",
+								"args": [
+									"web",
+									"--web-renderer",
+									"html"
+								]
+							},
+							{
+								"name": "Redmi Note 11",
+								"request": "launch",
+								"type": "dart",
+								"deviceId": "650a82a8",
+								"program": "lib/main_dev.dart",
+								"args": [
+									"--flavor",
+									"dev",
+									"--target",
+									"lib/main_dev.dart",
+								]
+							},
+						]
+					}
+					##############################FILE END##############################	
+
+# Emulator config
+
+	# Emulator - alterar tamanho da tela
+
+		# Tutorial
+
+			https://pt.stackoverflow.com/questions/92394/como-mudar-a-janela-do-emulador-do-android-studio#92395
+			
+			https://stackoverflow.com/questions/48644167/hide-android-emulator-menu-bar
+			
+			https://www.semicomplete.com/projects/xdotool/
+			
+			https://stackoverflow.com/questions/26704195/programmatically-hide-show-a-window-in-linux/26704369#26704369
+
+		# Testes feito no Debian 12 Linux
+
+			# Com o Emulador aberto e tendo já o "FOCU" na janela do emulador
+
+				# FOCU
+
+					# Pressionar as combinaçoes de teclas de atalho
+
+						ALT + TAB
+
+				# REDIMENCIONAR
+
+					# Pressionar as combinaçoes de teclas de atalho
+
+						ALT + ESPAÇO
+
+							REDIMENCIONAR
+
+								# Com as SETAS "pra baixo" e "pra cima", altere o tamanho da janela
+
+									# Pressionar "ENTER" logo em seguida, quando já estiver do tamanho desejado
+
+				# TOPO
+
+					# Pressionar as combinaçoes de teclas de atalho
+
+						ALT + ESPAÇO
+
+							SEMPRE NO TOPO
+							
+		# Show/Hide Android Emulator Menu Bar
+		
+			# Install xdotool
+	
+				$ sudo apt update
+				$ sudo apt upgrade
+
+				$ sudo apt-get install xdotool
+				
+				$ xdotool -h
+				
+				# Primeiro você deve encontrar o id dessa janela
+
+					$ xdotool selectwindow
+					
+						# Agora com o "MOUSE" selecione a janelinha da barra do "MENU BAR"
+							
+							# ID janelinha da barra do "MENU BAR"
+							
+								33554438
+
+								# Esconder e Exibir "Menu Bar"
+								
+									# HIDE
+										$ xdotool windowunmap 33554438
+										
+									# SHOW
+										$ xdotool windowmap 33554438
+														
+							# ID janela principal do emulador
+						
+								33554435
+
+
+# Insomnia/Postman TEST = Optei por usar o insomnia, porque o professor está uando ele e cedeu o arquivo de "importação", e não é suportado pelo "postman"
+
+  # Postman test
+
+    https://parseapi.back4app.com/parse/functions/v1-sign-in
+
+      Tests => O test é aolicado automaticamente, na aba "Test", próximo do "headers, body, etc..."
+
+        pm.test("Generate sessionToken", function () {
+          var jsonData = pm.response.json();
+          pm.environment.set("sessionToken", jsonData.result.token);
+        });
+
+
+  # Insomnia test
+
+	# Como definir automaticamente o token de acesso no Insomnia
+
+		# Ver tutorial
+	
+			# Como encadear requests (com access_token) no Insomnia
+
+				https://www.youtube.com/watch?v=KzZs1qB57wc
+
+				ou
+
+				OneDrive -> Tutorials -> "Como encadear requests (com access_token) no Insomnia"
+				
+				# Ir até "Manage Environments"
+
+					01 - Manage Environments
+					02 - api-scheduling-parse
+
+						{
+							"accept": "application/json",
+							"contentType": "application/json",
+							"applicationId": "ZaQej878C237PWfhhvGuwBDJgjtRG4cXsddfiLdf",
+							"restApiKey": "oLTxi2NXY9jIXmRy3ZtqqGJHNjURGY2Q2Q38o6AK",
+							"sessionToken": "TOKEN_HERE" => "r:4933e2ab474cb70e29ca26ec575b6cfb"
+						}
+					
+					03 - Em "sessionToken": "DIGITAR response"
+					04 - Aí escolher "sessionToken": "Response -> Body Attribute"
+					05 - Deixar como descrito abaixo
+					06 - Edit Tag
+
+						# Function to Perform
+							
+							Response – reference values from other request's responses
+
+						# Attribute
+							
+							Body Attribute – value of response body
+
+						# Request
+							
+							[api-scheduling-parse] [Auth] POST v1-sign-in
+
+						# Filter (JSONPath or XPath)
+							
+							$..token
+
+						# Trigger Behavior
+						
+							Never – never resend request
+
+						# Live Preview
+							
+							r:4933e2ab474cb70e29ca26ec575b6cfb
+
+					07 - Done
+
+
+
+# BFF
+
+	Backend For Frontend
+
+# Dicas de packages "pubspec"
+
+	# Usado na aula e no projeto
+
+		https://pub.dev/packages/go_router
+			
+			go_router: ^10.1.0
+
+		https://pub.dev/packages/dio
+		
+			dio: ^5.3.3
+
+		https://pub.dev/packages/pretty_dio_logger
+		
+			pretty_dio_logger: ^1.3.1
+
+		https://pub.dev/packages/get_it
+			
+			get_it: ^7.6.4
+
+	# Recomendações para uso futuro
+
+		Aula 6 - 01:12:00
+			
+			https://pub.dev/packages/curl_logger_dio_interceptor
+
+				curl_logger_dio_interceptor: ^1.0.0
+
+		Aula 6 - 01:34:15
+			
+			https://pub.dev/packages/fresh_dio
+
+				fresh_dio: ^0.4.1
+
+	# Baixar o package "auto_animated"
+
+		https://pub.dev/packages/auto_animated
+
+			dependencies:
+				auto_animated: ^3.2.0
+
+		Aula 28 - 00:19:24
+		
+# Packages de "geração de código"
+
+	# Quando o professor fala de "packages Injectable" por exemplo que geram código
+	# Ou de packages que precisa de geração de código
+	# Ele quer dizer que o package irá criar várias linhas de código, para customizar o uso para facilitar pra generate
+
+	# Isso pode ser bom, porque agiliza o desenvolvimento, agente apenas cria uma notação acima da classe "@Injectable class myClassName(){...}", e tudo será criado automaticamente.
+	# Isso ppode ser ruim, porque não temos o controle de como esse código será criado
+
+# Dependência de recursos nativos
+
+	# Isso acontece quando agente tenta rodar a aplicação
+	# Onde há alguma funcionalidade onde precisa de recursos "nativos"
+	# Então precisamos informar isso ao "dart/flutter"
+
+	# Solução é adicionar a chamada do "WidgetsFlutterBinding", antes do "runApp(...)" ver exemplo abaixo
+
+		######################FILE EXAMPLE START######################
+		void bootstrap(FlavorConfig config) async {
+			WidgetsFlutterBinding.ensureInitialized();
+			await configureDependencies(config);
+			runApp(const App());
+		}
+		######################FILE EXAMPLE END######################
+
+# Debug
+
+	# Debug Print Detalhes
+	
+		# Imprimindo o objeto e detalhes desse objeto
+
+			try{
+				
+				//CODE...
+				
+			}catch(e, s){
+
+				debugPrintdebugPrint('DebugPrint: ${$e $s}');s
+
+			}
+
+# UUID
+
+	# Procurar na "web" por "uuid generator"
+
+		https://www.uuidgenerator.net/
+
+		# Dar preferência e usar o modelo "Version 4 UUID Generator"
+
+			# uuid gerado automaticamente pelo site
+			
+			dac15e82-764f-427a-addb-5fbbf74cead3
+
+	# Procurar na "web" por "uuid collision probability"
+
+		https://stackoverflow.com/questions/24876188/how-big-is-the-chance-to-get-a-java-uuid-randomuuid-collision
+
+		# Descer até "According to wikipedia, regarding the probability of duplicates in random UUIDs:"
+
+			# O que iteressa é essa frase abaixo
+
+			Only after generating 1 billion UUIDs every second for the next 100 years, the probability of creating just one duplicate would be about 50%. Or, to put it another way, the probability of one duplicate would be about 50% if every person on earth owned 600 million UUIDs.
+
+	# Procurar na "web" por "uuid collision probability calculator"
+
+		https://alex7kom.github.io/nano-nanoid-cc/
+
+		# Test
+
+			Alphabet: 
+			0123456789abcdefghijklmnopqrxstuvwxyz
+			
+			The length of ID: 
+			10 symbols
+			
+			The speed of ID generation: 
+			1000 IDs per hour
+			
+			~12 months of work are needed in order to have a 1% probability of at least one collision.
+
+# App Version in "pubspec"
+
+	# No arquivo "pubspec.yaml" do projeto Flutter
+
+		# Na linha "4"
+
+		version: 0.1.0+1
+
+			"0.1.0" => pode ser repetido a cada envio para as lojas "android e ios"
+			"+1" => NÃO PODE ser repetido a cada envio para as lojas "android e ios", DEVE SEMPRE INCREMENTAR
+
+			Ex: 01 => version: 0.1.0+1
+			Ex: 02 => version: 0.1.0+2
+			Ex: 03 => version: 0.1.1+3
+			...
+			...
+			Ex: 03 => version: 1.0.0+6
+
+
+# Parse SDK for JavaScript
+
+	https://parseplatform.org/Parse-SDK-JS/api/master/index.html
+	
+# Web Image 
+
+	token:
+
+		dXOTVmkFQ2iiBDlCNmR13x:APA91bHV-aFVi414n9o2PDBVLZbH0hFbRUr0cFr8ssecesWBfInnzUpYYvHJ6Y4Td1SsHb7Uj1z98lSLfKIGXCCUxaCd2hWyooklzS9EP7rcrnNsF80qzLNEkIXn7_QzHv3BbAQi0uLi
+
+	1	
+		Notificação
+			Título da notificação
+				Info
+			Texto da notificação
+				Corpo da Notificação
+			Imagem de notificação (opcional)
+				https://icon-library.com/images/notifications-icon-png/notifications-icon-png-9.jpg
+			Nome da notificação (opcional)
+				push_notification
+
+	2
+		Segmentação
+
+			Segmentar usuário se…
+				app_scheduling_flutter (android)
+			Menos de 100 usuários correspondem a essa condição
+
+	3
+		Programação
+			Enviar para usuários qualificados
+				Agora
+
+
+	4
+		Eventos de conversão (opcional)
+			Enviadas
+				Abertas
+
+				Selecionar métrica de objetivo
+				Rótulos de análise
+
+				Adicionar um rótulo de análise
+
+
+	5
+		Outras opções (opcional)
+			Todos os campos são opcionais
+
+			Canal de notificações do Android
+				security
+			Dados personalizados
+				keySecurity
+				critical
+
+# ADB
+
+	# Na aula 18 exatamente aos 01:22:05
+
+		# O professor ensina como configurar o uso de comandos "ADB" diretamente via terminal, no Android Studio
+
+			# Tenho que aprender a usar os mesmos recursos no VSCode
+
+				# Comandos usados, pesquisar mais sobre isso depois
+
+					$ adb devices
+					$ adb reverse tcp:my_server_localhost_port_number tcp:my_smartphone_client_port_number
+					$ adb reverse tcp:3000 tcp:3000
+
+# Splash Screen Package
+
+	# Procurar por "flutter native splash"
+
+		https://pub.dev/packages/flutter_native_splash
+
+			flutter_native_splash: ^2.3.6
+
+				# Package para alterar a Splash Creen Nativa do Android, tipo como se estivessemos editando pelo "Kotlin" via ".xml" file
+
+# Package Info Plus
+
+	# Procurar por "package info plus"
+
+		https://pub.dev/packages/package_info_plus
+
+			package_info_plus: ^4.2.0
+
+				# Package pra sabermos informações como "Build Number" do dispositivo
+
+# Missing Plugin Exception
+
+	"No implementation found for method getAll on channel dev.fluttercommunity.plus/package_info"
+
+		# Por causa desse pacote "package_info_plus: ^4.2.0"
+
+			# Erro causado por termos implementado ou instalamos algum pacote que trabalha internamente de forma nativa no ispositivo
+			# para resolver esse erro, devemos matar o "App" reiniciar ele do zero novamente, para aplicar todas as alterações de dependências
+
+# Fluter Run
+
+	# Na aula 20 ás 01:20:00, o professor encontra um erro, de "Multidex Suport"
+
+		# Solução é rodar o projeto via terminal, para instalar "WEB SDK"
+
+			# Ver endereço abaixo
+
+				https://docs.flutter.dev/deployment/android#enabling-multidex-suport
+
+					# Descer até "Enabling multidex support"
+
+						# Primeiro devo abrir o "Flutter: Launch Emulador"
+
+						# Segundo rodar o comando abaixo, para resolver
+						# Irá perguntar se "quer adicionar multidex suporte para o android?"
+						# Responder "SIM"
+
+							$ fvm flutter run --flavor prod
+							
+						# Depoise precisar, rodar o comando abaixo também
+							
+							$ fvm flutter run --flavor dev
+
+# Rotas Go ou Replace
+
+	# O professor explica na aula "Aula 20 aos 01:30:00"
+
+		# Aplicar "go" melhor para voltar a navegação
+
+# Git branchs
+
+	# Git ignore para o Push GitHub
+
+		# Alterar o arquivo ".gitignore"
+
+			# Adicionando essa última linha abaixo ".fvm/"
+
+			#####################FILE START#####################
+			# Android Studio will place build artifacts here
+			/android/app/debug
+			/android/app/profile
+			/android/app/release
+
+			# FVM Version Cache
+			.fvm/
+			#####################FILE END#####################
+
+	# Create new "Branchs" usando o "GitFlow"
+
+		# main
+			default
+
+		# release
+			$ git checkout -b release
+
+		# develop
+			$ git checkout -b develop
+
+		# feature		
+			$ git checkout -b feature/30
+
+		# Ver todas as branchs
+			$ git branch -ra
+
+		# Entrar dentro de uma branch específica
+			$ git checkout develop
+
+# PageView
+	# PageView(NeverScrollableScrollPhysics) => Bloqueando a arrastar para os lados direito e esquerdo
+
+# Multiplos blocos de Widgets
+
+	# Basta usar o "...", os três pontinhos logo após o "if"
+
+		# Para colocar multiplos blocos de "widgets" dentro de um mesma estrutura condicional "if" por exempĺo...
+
+			# Exemplo de uso, abaixo...
+				
+				Padding(
+					padding: const EdgeInsets.fromLTRB(24, 0, 24, 44),
+					child: Row(
+					children: [
+						//#################HERE#################
+						if (page > 0) ...[
+						AppTextButton(
+							label: 'Voltar',
+							onPressed: () {
+							pageController.animateToPage(
+								page - 1,
+								duration: const Duration(milliseconds: 300),
+								curve: Curves.ease,
+							);
+							},
+						),
+						const SizedBox(width: 16),
+						],
+						Expanded(
+						child: AppElevatedButton(
+							label: 'Próximo',
+							iconPath: 'assets/icons/arrow_right.svg',
+							onPressed: () {
+							pageController.animateToPage(
+								page + 1,
+								duration: const Duration(milliseconds: 300),
+								curve: Curves.ease,
+							);
+							},
+						),
+						),
+					],
+					),
+				),
+
+# Gradle Errors
+
+	##########################################NOTE START##############################################
+	# Depois de corrigir os erros relacionados a versão => "fvm use 3.16.9"
+	# Rodei o comando os comandos abaixo
+	
+		$ fvm list
+		$ fvm releases
+		$ fvm use 3.19.4
+
+	# Fechei o App VSCode
+	# Abri o App VSCode novamente, e rodei o comando abaixo
+
+		$ fvm flutter clean
+
+	# Fechei o App VSCode
+	# Abri o App VSCode novamente, e rodei o comando abaixo
+
+		$ fvm flutter doctor
+		$ fvm flutter pub get
+
+	# Fechei o App VSCode
+	# Abri o App VSCode novamente, e rodei o comando abaixo
+
+		CTRL + P => "Flutter: Launch Emulator"
+
+		# Rodei como "Flutter Prod Run"
+		# E funcionou beleza
+
+	# Rodei depois para resolver atualizações de algumas dependências, que não tiveram a versão atualizada
+
+		# Checar se há alguma versão que precise ser atualizada
+		
+			$ fvm flutter pub outdated
+		
+		# Atualizar as versões que foram apresentadas
+
+			$ fvm flutter pub upgrade
+
+		# Atualizar as versões que ainda não foram atualizadas, aqui vamos forçar a versão masi atual "--major-versions"
+
+			$ fvm flutter pub upgrade --major-versions
+
+				# Tentei atualizar para a versão "1.12.0", mas não foi possível, aí tentei a versão "1.11.0", aí deu certo
+
+					# Versão antiga instalada
+					
+						meta: ^1.9.1
+					
+					# Versão atual instalada
+					
+						meta: ^1.11.0
+
+	##########################################NOTE END################################################
+
+	# Apareceram vários erros e fui resolvendo conforme descritos abaixo
+
+		# Setei o "fvm use 3.16.9"
+
+			# Tive que corrigir algumas coisas, vou descrever abaixo
+
+				# Abir o arquivo "android/build.gradle"
+				
+					# Alterar a versão do "kotlin"
+
+						# Buscar referência diretamente no site oficial
+
+							https://kotlinlang.org/docs/releases.html#release-details
+
+								Build info
+
+								Build highlights
+
+								1.9.23
+
+								Released: March 7, 2024
+
+								Release on GitHub
+
+								A bug fix release for Kotlin 1.9.20, 1.9.21, and 1.9.22.
+
+								Learn more about Kotlin 1.9.20 in What's new in Kotlin 1.9.20.
+
+
+					##################FILE START##################
+					buildscript {
+						//ext.kotlin_version = '1.7.10'
+						ext.kotlin_version = '1.9.23'
+						repositories {
+							google()
+							mavenCentral()
+						}
+
+						...
+
+					##################FILE END##################
+
+				# Abir o arquivo "android/app/build.gradle"
+
+					##################FILE START##################
+					...
+
+					defaultConfig {
+							// TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
+							applicationId "dev.jpteam.app_scheduling_flutter"
+							// You can update the following values to match your application needs.
+							// For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-gradle-build-configuration.
+							//hell
+							minSdkVersion 19
+							//minSdkVersion 29
+							//minSdkVersion flutter.minSdkVersion
+							targetSdkVersion flutter.targetSdkVersion
+							//targetSdkVersion 26
+							versionCode flutterVersionCode.toInteger()
+							//versionCode 7
+							versionName flutterVersionName
+							//hell
+							//versionName "1.0"
+							//testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+							//multiDexEnabled true
+						}
+
+						flavorDimensions "flavorDimension"
+						productFlavors {
+							dev {
+								dimension "flavorDimension"
+								applicationIdSuffix ".dev"
+								resValue "string", "app_name", "Agendamento DEV"
+								versionNameSuffix ".dev."
+							}
+							prod {
+								dimension "flavorDimension"
+								resValue "string", "app_name", "Agendamento"
+							}
+						}
+
+						buildTypes {
+							release {
+								// TODO: Add your own signing config for the release build.
+								// Signing with the debug keys for now, so `flutter run --release` works.
+								signingConfig signingConfigs.debug
+							}
+						}
+					}
+
+					flutter {
+						source '../..'
+					}
+
+					dependencies {    
+						implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+						implementation platform('com.google.firebase:firebase-bom:32.1.0')
+						implementation 'com.google.firebase:firebase-crashlytics-ktx'
+						implementation 'com.google.firebase:firebase-analytics-ktx'
+					}
+					##################FILE END##################
+
+
+	# Apenas checar as atualizações disponíveis para todos os pacotes já instalados no projeto
+
+		$ fvm flutter pub outdated
+		
+		$ fvm flutter pub upgrade
+		$ fvm flutter pub upgrade --major-versions
+		$ fvm flutter update-packages --force-upgrade
+		
+		$ fvm flutter clean
+		$ fvm flutter pub get
+
+		# Return
+		
+			hell@hell:~/projects/flutter/app-scheduling-flutter$ fvm flutter pub outdated
+			Showing outdated packages.
+			[*] indicates versions that are not the latest available.
+
+			Package Name            Current   Upgradable  Resolvable  Latest   
+
+			direct dependencies:   
+			firebase_analytics      *10.8.9   *10.8.9     *10.8.9     10.8.10  
+			firebase_core           *2.27.0   *2.27.0     *2.27.0     2.27.1   
+			firebase_crashlytics    *3.4.18   *3.4.18     *3.4.18     3.4.19   
+			firebase_messaging      *14.7.19  *14.7.19    *14.7.19    14.7.20  
+			firebase_remote_config  *4.3.17   *4.3.17     *4.3.17     4.3.18   
+			go_router               *10.2.0   *10.2.0     13.2.1      13.2.1   
+			meta                    *1.10.0   *1.10.0     *1.10.0     1.12.0   
+			package_info_plus       *4.2.0    *4.2.0      5.0.1       5.0.1    
+
+			dev_dependencies:      
+			flutter_lints           *2.0.3    *2.0.3      3.0.1       3.0.1    
+
+			3  dependencies are constrained to versions that are older than a resolvable version.
+			To update these dependencies, edit pubspec.yaml, or run `flutter pub upgrade --major-versions`.
+
+# Device Preview
+
+	# Flutter Package
+
+		https://pub.dev/packages/device_preview
+
+			#  flutter pub add device_preview
+				
+				# This will add a line like this to your package's pubspec.yaml (and run an implicit flutter pub get):
+
+					# Abrir o arquivo "pubspec.yaml"
+
+						# Pressionar "CTRL + P"
+
+							# Selecionar => "Pubspec Assist: Add/update dependencies"
+
+								# Inserir "device_preview" e pressionar "ENTER"
+
+									dependencies:
+										device_preview: ^1.1.0
+	
+# Switch Case
+
+	# Ver aula sobre "Device Preview e Permissões da Onboarding"
+
+		# Aula 22
+
+			# 00:33:40
+
+				# Aprender a usar a nova nomenclatura do flutter, pesquisar depois
+
+					# Tutorial 
+					# "https://blog.flutterando.com.br/uma-nova-forma-de-utilizar-os-switch-case-no-dart-3-6e34f0a323db"
+					# ùltimo exemplo
+
+					##############FILE START##############
+					@override										
+					FullNameValidationError? validator(String value) {
+						return switch (value) {
+						(String value)
+							when value.isEmpty => FullNameValidationError.empty,
+						(String value)
+							when value.length <= 1 => FullNameValidationError.incomplete,
+						_ => null,
+						};
+					}
+					##############FILE END##############
+
+		# Aula 27
+
+			# 00:52:00
+
+				# Aprender a usar a nova nomenclatura do flutter, pesquisar depois
+
+					#############FILE START##############
+					(switch (result) {
+							Success(:final object) => emit(
+								state.copyWith(
+								status: HomeNextSchedulesStatus.success,
+								schedulings: object,
+								),
+							),
+							Failure() => emit(
+								state.copyWith(
+								status: HomeNextSchedulesStatus.error,
+								),
+							),
+						}
+					);
+					##############FILE END##############
+
+# Show Dialog
+
+	# Na aula 23
+				
+		00:05:00
+
+		# O professor dá umas dicas de como adicionar uma imagem, no topo do Dialog
+
+# Social Buttons Icons
+
+	
+	# Na aula 23
+				
+			00:35:50
+
+			# flutter_signin_button
+
+				https://pub.dev/packages/flutter_signin_button
+
+					dependencies:
+	...
+							flutter_signin_button: ^2.0.0
+
+			# Optamos por não usar esse package, ver exatamente aos...
+
+				00:41:34
+
+# Store Redirect "Play Store, Apple Store"
+
+	
+	# Na aula 23
+				
+			00:53:46
+
+			# store_redirect
+
+				https://pub.dev/packages/store_redirect
+
+					dependencies:
+	...
+							store_redirect: ^2.0.2
+
+# Git Pull - GitHub
+
+	Aula 24
+				
+		00:19:30
+
+			# O professor menciona como transferir todos os "commits" de uma "branch" para outra "branch"
+
+				# Listando todas as "branchs" e checando em qual "branch" nós estamos
+
+					$ git branch -ra
+
+						# Return
+
+							develop
+							* feature/30
+							master/main
+							release
+
+							# Aqui estamos debtro da branch "feature/30"
+
+						# Setando a branch "develope" como "branch" que vamos trabalhar no momento
+
+							$ git checkout develope
+
+						# Mergiando dados da branch "fefature/30" para branch "develope"
+							$ git merge fefature/30
+
+						# Listando todas as "branchs" e checando em qual "branch" nós estamos
+							$ git branch -ra
+
+							# Return
+
+								* develop
+								feature/30
+								master/main
+								release
+
+						# Criando uma nova branch "feature/32" por exemplo
+
+							$ git checkout -b feature/32
+
+							# Agora seguir com desenvolvimento e depois comitar
+
+# Single Child Scrool View
+
+	Aula 24
+				
+		00:40:14
+
+			# O professor ensina como aplicar "SingleCildScroolView" em uma página, entre outras configurações
+
+# Placeholder - Tela em branco com linhas cruzadas na diagonal tipo um "X"
+
+	# Ver Aula 24 => 00:50:08
+
+		# Criar um widget "StateLess" ou "StateFull"
+		
+			# Chamar o atalho personalizado "stf" ou "stl", só começar a digitar
+
+				#############################FILE START#############################
+				import 'package:flutter/material.dart';
+				
+				class MyWidget extends StatefulWidget {
+					const MyWidget({super.key});
+
+					@override
+					State<MyWidget> createState() => _MyWidgetState();
+				}
+
+				class _MyWidgetState extends State<MyWidget> {
+
+					@override
+					Widget build(BuildContext context) {
+						return const Placeholder();
+					}
+				}
+				#############################FILE END#############################
+
+				# Aplicar dependência "material"
+
+					# Chamar o atalho personalizado "mat", só começar a digitar
+
+						import 'package:flutter/material.dart';
+
+# Tradução vários idiomas
+
+	Aula 25
+
+		00:52:51
+		e
+		00:58:18
+
+			# primeira opção
+
+
+				# O professor menciona como internacionalizar os idiomas
+
+					# USando o package "slang"
+
+						https://pub.dev/packages/slang
+
+						# Recomendação do professor
+
+							https://www.youtube.com/results?search_query=Flutter+slang
+
+						# Flutter localization - 11 slang parte 1
+
+							https://www.youtube.com/watch?v=qRb8e-D860o
+
+
+			# segunda opção
+				
+				# Usar o "l10n"
+
+					https://github.com/jp-team-dev/myfavorites
+
+					# Ver arquivo "main.dart"
+
+						########################FILE START########################
+						...
+						class MyApp extends StatelessWidget {
+
+						const MyApp({Key? key}) : super(key: key);
+
+						@override
+						Widget build(BuildContext context) {
+							return GetMaterialApp(
+							localizationsDelegates: AppLocalizations.localizationsDelegates,
+							supportedLocales: AppLocalizations.supportedLocales,
+							debugShowCheckedModeBanner: false,
+							title: 'My Favorites',
+							theme: ThemeData(primarySwatch: Colors.blue,),
+							home: const SplashScreenComponent()
+							);
+						}
+						}
+						########################FILE END########################
+
+					# Ver esse vídeo no youtube
+
+						# Flutter Localizations & Internationalisation (l10n) || How to implement multiple language in Flutter
+
+							https://www.youtube.com/watch?v=UqKa5LoJpFA
+
+						# Ou procurar por vídeos masi recentes, talvez haja algum recurso masi moderno
+
+							https://www.youtube.com/results?search_query=Flutter+Localizations+%26+Internationalisation
+
+# Loading
+
+	https://pub.dev/packages/loading_animation_widget
+
+		# Estou usando o "LoadingAnimationWidget.discreteCircle()"
+		# O profesor gostou do "LoadingAnimationWidget.stretchedDots()"
+
+# Live Template VSCode
+
+	# Aula 28
+
+		00:04:25
+
+	# Pressionar "file/preferences/Configure User Snippets"
+
+	ou	
+	
+	# Pressionar as combinações de teclas abaixo
+
+		CTRL + SHIFT + P
+			
+			Snippets: Configure User Snippets
+
+				Selecionar
+
+					dart.json (dart)
+	
+	# Criando snippets personalizados
+
+		# Vai estar assim...
+
+			#######################FILE START#######################
+			{
+				// Place your snippets for dart here. Each snippet is defined under a snippet name and has a prefix, body and 
+				// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+				// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+				// same ids are connected.
+				// Example:
+				// "Print to console": {
+				// 	"prefix": "log",
+				// 	"body": [
+				// 		"console.log('$1');",
+				// 		"$2"
+				// 	],
+				// 	"description": "Log Output to Console Generator"
+				// }
+				"dartUnitTestVoidMain": {
+					"prefix": "tes",
+					"body": [
+						"import 'package:test/test.dart';",
+						"",
+						"void main(){",
+						"\ttest('description', () {",
+						"\t\t//CODE...$2",
+						"\t});",
+						"}"
+					],
+					"description": "Add Void Method Generator"
+				},
+				"dartUnitTestSetUp": {
+					"prefix": "testsetup",
+					"body": [
+						"\tsetUp(() {",
+						"\t\t//CODE...$2",
+						"\t});",
+					],
+					"description": "Add Void Setup Method Generator"
+				},
+				"debugPrint": {
+					"prefix": "deb",
+					"body": [
+						"debugPrint('DebugPrint: ${$2}');"
+					],
+					"description": "Add Debug Print Generator"
+				},
+				"codeCommentPrint": {
+					"prefix": "todo",
+					"body": [
+						"//print: $2"
+					],
+					"description": "Add My TODO Personal Comment"
+				},
+				"materialFlutterPackage": {
+					"prefix": "mat",
+					"body": [
+						"import 'package:flutter/material.dart';",
+					],
+					"description": "Add My Personal Comment"
+				},
+				"multiplesComments": {
+					"prefix": "com",
+					"body": [
+						"/*",
+						"# $2",
+						"*/"
+					],
+					"description": "Add Comments Generator"
+				},
+				"stateLessDefault": {
+					"prefix": "lesdefault",
+					"body": [
+						"import 'package:flutter/material.dart';",
+						"",
+						"class $1 extends StatelessWidget {",
+						"\tconst $1 ({super.key});",
+						"",
+						"\t@override",
+						"\tWidget build(BuildContext context) {",
+						"\t\treturn Container(",
+						"\t\t\t$2",
+						"\t\t);",
+						"\t}",
+						"}"
+					],
+					"description": "Add State Less Widget Generator Default Dart/Flutter"
+				},
+				"stateLessAppStateless": {
+					"prefix": "lesappstateless",
+					"body": [
+						"import 'package:flutter/material.dart';",
+						"import 'package:app_scheduling_flutter/core/theme/app_theme.dart';",
+						"import 'package:app_scheduling_flutter/core/widgets/base/app_stateless.dart';",
+						"",
+						"class $1 extends AppStateless {",
+						"\tconst $1 ({super.key});",
+						"",
+						"\t@override",
+						"\tWidget builder(BuildContext context, AppTheme theme) {",
+						"\t\tthrow UnimplementedError();",
+						"\t}",
+						"}"
+					],
+					"description": "Add State Less Widget Generator Personal Dart/Flutter to project [Agendamento]"
+				},
+				"stateFull": {
+					"prefix": "ful",
+					"body": [
+						"import 'package:flutter/material.dart';",
+						"",
+						"class $1 extends StatefulWidget {",
+						"\tconst $1 ({super.key});",
+						"",
+						"\t@override",
+						" \tState<$1> createState() => _$1State();",
+						"}",
+						"class _$1State extends State<$1> {",
+						" \t@override",
+						" \tWidget build(BuildContext context) {",
+						"\t\treturn const Placeholder(",
+						" \t\t\t$2",
+						"\t\t);",
+						"\t}",
+						"} "
+					],
+					"description": "Add State Full Widget Generator Default Dart/Flutter"
+				},
+				"initState": {
+					"prefix": "ini",
+					"body": [
+						"@override",
+						"void initState() {",
+						"\tsuper.initState();",
+						"\t$2",
+						"}"
+					],
+					"description": "Add InitState Generator"
+				},
+				"dispose": {
+					"prefix": "dis",
+					"body": [
+						"@override",
+						"void dispose() {",
+						"\t$2",
+						"\tsuper.dispose();",
+						"}"
+					],
+					"description": "Add Dispose Generator"
+				},
+				"setState": {
+					"prefix": "setstate",
+					"body": [
+						"setState(() {",
+						"\t//CODE...$1",
+						"});"
+					],
+					"description": "Add SetState Generator"
+				},
+			}
+			#######################FILE END#########################
+
+# Database Back4App
+
+	# Quem tem agendamentos, cadastrados?
+
+		mateus@jpteam.dev	NÃO
+		marcos@jpteam.dev	SIM
+		lucas@jpteam.dev	SIM
+		joao@jpteam.dev		NÃO
+
+# super key
+
+	MODELO 1
+
+		class AppBasePage extends StatefulWidget {
+			const AppBasePage({
+				super.key,
+				required this.title,
+				this.bottomAction,
+			});
+		}
+
+	MODELO 2
+
+		class AppBasePage extends StatefulWidget {
+			const AppBasePage({
+				Key? key,
+				required this.title,
+				this.bottomAction,
+			}) : super(key: key);
+		}
+
+# Loading Animation Widget
+
+	LoadingAnimationWidget.discreteCircle(...)
+	
+	ou
+	
+	LoadingAnimationWidget.stretchedDots(...)
+
+# Rotas Dinâmicas
+
+	# Aula 29
+
+		00:20:00
+
+			# O professor explica e dá um exemplo, de como rotas dinâmicas são bons pra agilizar
+			# Mas podem causar erros
+
+				# Exemplo de rotas dinãmicas
+
+					# Em "lib/core/route/app_routes.dart"
+
+						#################################FILE START#################################
+						import 'package:app_scheduling_flutter/features/auth/pages/auth/auth_page.dart';
+						import 'package:app_scheduling_flutter/features/auth/pages/login/login_page.dart';
+						import 'package:app_scheduling_flutter/features/auth/pages/signup/signup_page.dart';
+						import 'package:app_scheduling_flutter/features/home/pages/home/home_page.dart';
+						import 'package:app_scheduling_flutter/features/intro/pages/force_update/force_update_page.dart';
+						import 'package:app_scheduling_flutter/features/intro/pages/maintenance/maintenance_page.dart';
+						import 'package:app_scheduling_flutter/features/intro/pages/not_found/not_found_page.dart';
+						import 'package:app_scheduling_flutter/features/intro/pages/onboarding/onboarding_page.dart';
+						import 'package:app_scheduling_flutter/features/intro/pages/splash/splash_page.dart';
+						import 'package:app_scheduling_flutter/features/professional/pages/professional_details/professional_details_page.dart';
+						import 'package:app_scheduling_flutter/features/professional/pages/professional_ratings/professional_ratings_page.dart';
+						import 'package:go_router/go_router.dart';
+
+						final router = GoRouter(
+						initialLocation: '/',
+						debugLogDiagnostics: true,
+						redirect: (context, state) {
+							return null;
+						},
+						errorBuilder: (context, state) => const NotFoundPage(),
+						routes: [
+							GoRoute(
+							path: AppRoutes.splash,
+							builder: (context, state) => const SplashPage(),
+							),
+							GoRoute(
+							path: AppRoutes.onboarding,
+							builder: (context, state) => const OnboardingPage(),
+							),
+							GoRoute(
+							path: AppRoutes.auth,
+							builder: (context, state) => const AuthPage(),
+							routes: [
+								GoRoute(
+								path: AppRoutes.signup.path,
+								builder: (context, state) => const SignupPage(),
+								),
+								GoRoute(
+								path: AppRoutes.login.path,
+								builder: (context, state) => const LoginPage(),
+								),
+							],
+							),
+							GoRoute(
+							path: AppRoutes.maintenance,
+							builder: (context, state) => const MaintenancePage(),
+							),
+							GoRoute(
+							path: AppRoutes.forceUpdate,
+							builder: (context, state) => const ForceUpdatePage(),
+							),
+							GoRoute(
+							path: AppRoutes.home,
+							builder: (context, state) => const HomePage(),
+							),
+							GoRoute(
+							path: AppRoutes.professionalDetails(id: ':id'),
+							builder: (context, state) => ProfessionalDetailsPage(
+								id: state.pathParameters['id']!,
+							),
+							routes: [
+								GoRoute(
+								path: AppRoutes.professionalRatings.path,
+								builder: (context, state) => ProfessionalRatingsPage(
+									id: state.pathParameters['id']!,
+								),
+								),
+							],
+							),
+						],
+						);
+
+						class AppRoutes {
+						static const String splash = '/';
+						static const String onboarding = '/onboarding';
+						static const String auth = '/auth';
+						static const String maintenance = '/maintenance';
+						static const String forceUpdate = '/force-update';
+						static const String home = '/home';
+
+						static String professionalDetails({required String id}) =>
+							'/professionals/$id';
+
+						static const AppRoute signup = AppRoute(
+							fullPath: '/auth/signup',
+							path: 'signup',
+						);
+
+						static const AppRoute login = AppRoute(
+							fullPath: '/auth/login',
+							path: 'login',
+						);  
+
+						static AppRouteWithId professionalRatings = AppRouteWithId(
+							path: 'ratings',
+							buildFullPath: (id) => '/professionals/$id/ratings',
+						);
+
+						//print: Rotas dinâmicas
+						static AppRouteWithParameters rotaTest = AppRouteWithParameters(
+							path: 'ratings',
+							buildFullPath: (params) => '/professionals/${params['id']}/ratings/${params['rid']}',
+						);
+						}
+
+						class AppRoute {
+						const AppRoute({required this.fullPath, required this.path});
+
+						final String fullPath;
+						final String path;
+						}
+
+						class AppRouteWithId {
+						const AppRouteWithId({required this.path, required this.buildFullPath});
+
+						final String path;
+						final Function(String id) buildFullPath;
+
+						String fullPath({required String id}) => buildFullPath(id);
+						}
+
+						//print: Rotas dinâmicas
+						class AppRouteWithParameters {
+						const AppRouteWithParameters({required this.path, required this.buildFullPath});
+
+						final String path;
+						final Function(Map<String, String>) buildFullPath;
+
+						String fullPath({required Map<String, String> params}) => buildFullPath(params);
+						}
+						#################################FILE END###################################
+
+
+					# Chamando essa nova rota dinâmica
+
+						# Por exemplo, poderíamos chamar essa rota em 
+						
+							"lib/features/professional/pages/professional_details/widgets/professional_details_recent_ratings/professional_details_recent_ratings.dart"
+
+							# Apenas um pequeno exemplo
+
+								#################################FILE START#################################
+								@override
+								Widget build(BuildContext context) {
+									final AppTheme t = context.watch();
+
+									context.push(AppRoutes.rotaTest.buildFullPath({'Passar ID e passar também RID'}));
+
+									return BlocBuilder<ProfessionalDetailsRecentRatingsCubit,
+								}
+								#################################FILE END#################################
+
+# ShrinkWrap
+
+	# Get data aos poucos
+
+		# Aula 29
+
+			00:36:50
+
+				# O professor demonstra o uso correto do "scrool", onde ao scrollar a tela novos itens são apresentados
+				# Melhor assim, ppois se tiversmos 5000 itens pra ser apresentados, serão apresentados conforme o usuário scrola a página
+
+				00:41:27
+
+					# Ele reforça pra não usar o "shrinkWrap", quando precisamos de exibir muitos itens em uma "ListView" por exemplo
+					# Para não prejuducar a performance do nosso app
+
+# BottomNavigationBar
+
+	# Aula 29
+
+		01:30:00
+
+			# Mais ou meno nesse ponto aí, pode ser um pouco antes também...
+				
+# Rebuild - Usar o "AutomaticKeepAliveClientMixin"
+
+	# Aula 30
+
+		00:26:22
+
+			# Mais ou meno nesse ponto aí, pode ser um pouco antes também...
+
+				# Ver o arquivo "lib/features/home/pages/home/home_page.dart", na çinha 12
+
+					############################FILE EXAMPLE START############################
+					class _HomePageState extends State<HomePage> with AutomaticKeepAliveClientMixin {
+						@override
+						Widget build(BuildContext context) {
+							super.build(context);					
+						}
+					}
+					############################FILE EXAMPLE END############################
+
+					# Pra página não ficar sendo carregada toda a vez que o usuário entrar nessa tela
+
+
+# Login automático
+
+	lib/features/home/pages/home/sections/home_header_section.dart
+
+		# Linha 26
+
+			sessionCubit.login(email: 'marcos@jpteam.dev', password: '123456');
+				
+			_User
+
+				nu2UjOAolH
+					joao
+
+				w8n3q5gFoO
+					lucas
+
+				STY2qCepW3
+					marcos
+
+				Hd2K6BS8gl
+					mateus
+
+
+# DevTools - Command Pallet
+
+	# Combinações de teclas abaixo
+
+		CTRL + SHIFT + P
+
+		# Depois digitar "Flutter: Open DevTools" ou "Dart: Open DevTools"
+
+			Open
+
+			Ou
+			
+			Flutter: Open DevTools
+
+			Ou
+
+			Dart: Open DevTools
+
+				# Escolher uma das opções disponíveis abaixo que aparecerão
+		
+					"Open Widget Inspector Page"
+					"Open CPU Profiler Page"
+					"Open Memory Page"
+					"Open Performance Page"
+					"Open Network Page"
+					"Open Logging Page"
+					"Open Deep Links Page"
+					"Open DevTools in Web Browser"
+
+		# Para testar escolhi esse "Open DevTools in Web Browser"
+
+			"Open DevTools in Web Browser"
+
+# Login e Password
+
+	# procurar por "sessionCubit.login(email: 'lucas@jpteam.dev', password: '123456');"
+	
+		# Para encontrar o arquivos com os dados de Email e Password
+
+			lib/features/home/pages/home/sections/home_header_section.dart
+
+# HashCode e Props
+
+	# Como exibir o "hashCode" e "props" equatable do model => "lib/features/home/models/notification.dart"
+
+		# Ver arquivo "lib/features/home/pages/notifications/notifications_page_cubit.dart"
+
+			void markNotificationRead(Notification notification) {
+				_repository.markNotificationRead(notification.id);
+				final readNotification = notification.copyWith(isRead: true);
+				//debugPrint('DebugPrint: ${state.hashCode}');
+				//debugPrint('DebugPrint: ${state.props}');
+				emit(state.replaceNotification(notification, readNotification));
+				//debugPrint('DebugPrint: ${state.hashCode}');
+				//debugPrint('DebugPrint: ${state.props}');
+			}
+
+# DegugPrint
+
+	# Ao usar o "debugPrint, print", dê preferência ao import "foundation"
+	# O "material" dá alguns conflitos com chamadas como "Notification" padrão do Dart/Flutter
+	# Se der conflito basta adicionar um "alias" => "hide PackageNameConflictHere"
+	
+		Ex.:
+		
+			import 'package:flutter/package_name_here.dart' hide PackageNameConflictHere;
+
+				# Exemplo de "import" conflitando com "Notification"
+
+					# Usar assim
+
+						import 'package:flutter/foundation.dart';
+						import 'package:flutter/material.dart' hide Notification;
+
+							debugPrint('DebugPrint: ${state.hashCode}');
+							print($state.hashCode);
+
+# AppRun
+
+	# Antigo "runApp", deixei apenas como referência mesmo!
+
+	######################FILE EXAMPLE START######################
+	runApp(DevicePreview(
+		builder: (_) => const App(),
+		//print: retornar para "enabled: config.flavor == AppFlavor.dev," depois...
+		//enabled: config.flavor == AppFlavor.dev,
+		enabled: true,
+	));
+	######################FILE EXAMPLE END######################
+
+# GoRouter
+
+	# Alterei a versão do GoRouter do meu projeto
+
+		# Current Version In My Project
+
+			go_router: ^13.2.2
+
+		# Altered Equal Professos
+
+			go_router: ^7.1.1
+
+# Google Maps - Emulator Config - Initial Point - My House Start Point Geolocation
+
+	# No emulador Android, acessar "Configurações/Settings"
+	# Procurar pelo meu endereço atual => "Rua Mantiqueira, 666 - Nossa Carmen"
+	# Assim que aparecer no mapa do emulador android, 
+	# SALVAR esse ponto, salvei como => "hell_house_point_2024-04-19_11-53-15"
+
+		hell_house_point_2024-04-19_11-53-15
+
+			SAVE
+
+	# Depois setar como local pre-definodo como início do mapa
+
+		SET LOCATION
+
+	# Apartir de agora vai funcionar melhor o mapa para eu ver todos os profissionais, próximos da meu local
+
+
+# Hide/Show "Menu Bar" Android Emulator
+	
+	# WINDOW
+		
+		$ xdotool selectwindow
+
+			33554438
+
+	# HIDE
+		
+		$ xdotool windowunmap 33554438
+		
+	# SHOW
+		
+		$ xdotool windowmap 33554438
+	
+
+# Dicas de packages "pubspec"
+
+	# freezed
+
+		https://pub.dev/packages/freezed
+
+			freezed: ^2.5.7
+
+	# undo
+
+		https://pub.dev/packages/undo
+			
+			undo: 1.5.0
+
+				Para trabalhar com eventos tipo "CTRL + Z" e "CTRL + Y"
+
+	# hydrated_bloc
+
+		# Para usarmos esse package, foi necessário alterar a versão do "compileSdk" para 34
+		# Ver arquivo "android/app/build.gradle", linha "28"
+
+		################################FILE START################################
+		...
+		android {
+			namespace = "dev.jpteam.app_bloccubit_flutter"
+			// compileSdk = flutter.compileSdkVersion
+			compileSdk = 34
+			ndkVersion = flutter.ndkVersion
+
+			compileOptions {
+				sourceCompatibility = JavaVersion.VERSION_1_8
+				targetCompatibility = JavaVersion.VERSION_1_8
+			}
+		}
+		################################FILE END################################
+
+		# Na última aula, aprendenmos a usar o package "hydrated_bloc"
+		# Que serve para mantermos salvo um tipo de backup dos útimos dados apresentadoa ao usuário
+		# Aqui no caso desse exemplo, foi apenas o dado de valor incrementado pelo pressionar do botão
+		
+		# Ver arquivo "lib/home_page.dart", na linha "85"
+
+			onPressed: () => context.read<CounterBloc>().add(CounterIncrement(1)),
+
+			# Ver arquivo "lib/counter_bloc.dart", linha "11", apartir dessa linha temos o código que fará o incremento
+
+				final class CounterIncrement extends CounterEvent {
+					CounterIncrement(this.value);
+
+					final int value;
+				}
+
+				# Quando restartamos o nosso App, o valor do último incremento ficará mantido no app, para o usuário visualizar novamente
+				# Ao fechar o nosso App e abrirmos novamente o valor do último incremento ficará mantido no app, para o usuário visualizar novamente
+		
+		# Bom para podermos apresentar dados ao usuário de configurações, preferências, uma tomada de decisão pendente, etc...
+		# Não é pra abusar desse recurso, apenas tomada de decisão simples, nada complexo, pois em certos casos complexos, isso pode não atender as expectativas
+
+
+# Parei aqui - Aula 01
+
+	00:00:00
